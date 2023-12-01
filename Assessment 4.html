@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <style>
+	*{
+	   margin: 0;
+	   padding: 0;
+	   box-sizing: border-box;
+	   font-family: 'Poppins', sans-serif;
+		 
+	}
+
+        .header{
+            width: 100%;
+	    height: 100vh;
+	    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),url(univ.jpg);
+	    background-position: center;
+	    background-size: cover;
+       	    position: relative;
+          
+        }
+	nav{
+	    display: flex;
+	    margin: auto;
+	    padding: 2% 6%;
+	    justify-content: space-between;
+	    align-items: center;
+        }
+	
+	nav img{
+	     width: 150px;
+	}
+
+	.logo{
+	    width: 200px;
+	    heigth: 200px;
+	    cursor: pointer;
+	}
+
+	.nav-bars{
+	    flex: 1;
+	    text-align: right;
+	} 
+
+        .nav-bars ul li{
+            list-style: none;
+            display: inline-block;
+	    padding: 8px 12px;
+	    position: relative;
+        }
+	
+	.nav-bars ul li a{
+	    font-size: 16px;
+            color: white;
+            text-decoration: none;
+        }
+
+	ul li a:hover{
+            color: #afeeee;
+        }
+
+	.text-box{
+            width: 90%;
+	    color: white;
+	    position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+	    text-align: center; 
+	}
+	
+	.text-box h1{
+            font-size: 62px;
+	    text-align: center; 
+	    color: white;
+		
+	}
+
+	.text-box p{
+	    margin: 10px 0 40px;
+            font-size: 20px;
+	    color: #afeeee;
+	}
+
+	.heading{
+            text-align: center;
+	    margin-top: 25px;
+	}
+
+	.heading h1{
+	    font-size: 36px;
+	    margin-top: 10px;
+	    text-align: center;
+	}
+
+	.about-us{
+            display: flex;
+	    align-items: center;
+	    margin: auto;
+	    width: 85%;
+	    background-color:#191970;
+	    
+	}
+	.about-us img{
+	    flex: 0 50%;
+	    max-width: 30%;
+            height: auto;
+	}
+
+	.content h2{
+	    font-size: 20px;
+	    color: white;
+	    margin: 15px 0px;
+	}
+
+	.content {
+	    padding: 35px;
+	}
+
+	.content p{
+	    font-size: 15px;
+	    line-height: 1.5;
+	    color: white;
+	    margin: 15px 0px;
+	}
+	
+	.academic{
+	    width: 80%;
+	    margin: auto;
+	    padding-top: 100px;	
+	}
+	
+	.academic ul li {
+	    font-size: 15px;
+            color: #777;
+            text-decoration: none;
+	    text-align: left;
+	}
+
+	.academic h1{
+	    font-size: 36px;
+	    font-weight: 600;
+	    text-align: center;
+	}
+
+	.academic p{
+            font-size: 15px;
+	    text-align: center;
+	    color: #777;
+	}
+
+	.academic h2{
+	    color: #191970;
+	    font-size: 20px;
+	    font-weight: 300;
+	    line-height: 22px;
+	    padding: 10px;
+            text-align: center;
+	}
+
+	.academic h4{
+	    padding-top: 30px;
+	    padding-bottom: 30px;
+	    background-color:#191970;
+	    color: white;
+	    text-align: center;
+	}
+	
+	.academic h5{
+	    color: #191970;
+	    font-size: 15px;
+	    font-weight: 300;
+	    line-height: 22px;
+	    padding: 10px;
+	    text-align: left;
+	}
+
+	.academic img{
+	    flex: 0 50%;
+	    max-width: 50%;
+            height: auto;
+	}
+
+	.academic h2 {
+	    font-size: 20px;
+            color:#191970;
+            text-decoration: none;
+	    text-align: center;
+	}
+
+	.admission {
+	    width: 80%;
+	    margin: auto;
+	    padding-top: 100px;	
+	}
+
+	.admission p {
+	    font-size: 15px;
+	    text-align: left;
+	    color: #777;
+	}
+
+	.admission ol li {
+	    font-size: 15px;
+	    color: #191970;
+            text-decoration: none;
+	    text-align: left;
+	}
+
+	.admission img{
+	    flex: 0 50%;
+	    max-width: 50%;
+            height: auto;
+	}
+
+
+	.contact {
+	    width: 80%;
+	    margin: auto;
+	    padding-top: 100px;	
+	}
+
+	.contact h3{
+	    color: #191970;
+	    font-size: 15px;
+	    font-weight: 300;
+	    line-height: 22px;
+	    padding: 10px;
+            text-align: center;
+	}
+	.contact p{
+	    font-size: 15px;
+	    text-align: center;
+	    color: #777;
+	}
+	
+	footer {
+	    background-color: #191970;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            position: fixed;
+	    right: 0;
+	    left: 0;
+            bottom: 0;
+            width: 100%;
+	    margin-top: auto;
+	}
+
+    </style>
+</head>
+
+	<body>
+		<section class="header">
+			<section id="home">
+			<nav>
+			<img src="logo_1.png" class="logo">
+			<div class="nav-bars">
+				<ul>
+        			<li><a href="#home">Home</a></li>
+        			<li><a href="#about">About Us</a></li>
+        			<li><a href="#courses">Courses</a></li>
+				<li><a href="#admission">Admission</a></li>
+				<li><a href="#contact">Contact</a></li>
+    				</ul>
+			</nav>
+			</div>
+		</section>
+		
+		<div class="text-box">
+			<h1>Welcome to the Stellaris University</h1>
+			<p><em>Where Knowledge Shines!</em></p>
+		</section>
+		</div>
+		
+		<div class="heading">
+		<section id="about">
+			 <h1>About Us</h1>
+                <br>
+		<hr>	
+		</div>
+		<br>
+		<section class="about-us">
+			 <img src="abt.jpg">
+		<div class="content">
+			 <br>
+			 <h2><strong>Stellaris University</strong></h2>
+			<p>Stellaris University is a prominent university committed to promoting global citizenship, innovation, and academic success. Embedded in a vibrant campus environment, our university is dedicated to providing a 			life-changing educational experience that gives students the values, information, and abilities they need to prosper in a world that is changing quickly.</p>
+		</div>
+		</section>
+		<br>	
+		<hr>
+	        <br>
+		
+		<section class="academic">
+			<section id="courses">
+        		<h1>Academic Programs</h1>
+			<br>
+			<hr>
+			<br>
+			<h2><strong>Engineering & Technology:</strong></h2>
+			<center><img src="eng_bg.jpg"></center>
+		        <br>
+			<p>Discover the innovative fields of engineering and technology, where creativity and practical application collide. Our courses in computer science, electrical        engineering, and civil 	engineering provide students the tools they need to address problems in a variety of sectors and influence technology embarking future.</p>
+
+			<h5><strong>Courses Offered:</strong></h5>
+			<ul>
+			    <li>Electrical Engineering</li>
+			    <li>Computer Science</li>
+			    <li>Civil Engineering</li>
+			</ul>
+			
+			<br>
+			<hr>
+			<br>
+			<h2><strong>Business & Management:</strong></h2>
+			<center><img src="business.jpg"></center>
+			<br>
+			<p>With our business and management courses, you may unleash your entrepreneurial drive and potential as a leader. Whether you specialize in business administration, marketing, or 				entrepreneurship, you'll learn critical skills for navigating the business world's shifting landscape and generating success.</p>
+
+			<h5><strong>Courses Offered:</strong></h5>
+			<ul>
+			    <li>Business Administration</li>
+			    <li>Marketing</li>
+			    <li>Entrepreneurship</li>
+			</ul>
+			<br>
+			<hr>
+			<br>
+			<h2><strong>Health Sciences:</strong></h2>
+			<center><img src="health.jpg"></center>
+			<br>
+			<p>With the help of our Health Sciences programs, we set out on a mission to improve healthcare. You will be prepared to make a meaningful impact on people's lives and communities, from 			the complex area of medicine to the sensitive care of nursing and the wider views of public health.</p>
+
+			<h5><strong>Courses Offered:</strong></h5>
+			<ul>
+			    <li>Medicine</li>
+			    <li>Sociology</li>
+			    <li>Public Health</li>
+			</ul>
+			<br>
+			<hr>
+			<br>
+			<h2><strong>Humanities & Social Sciences:</strong></h2>
+			<center><img src="human.jpg"></center>
+			<br>
+			<p>Explore the world of concepts and human existence with our courses in the humanities and social sciences. Investigate the workings of society via sociology; examine the intricacies of 			the human mind through psychology; and learn about the dynamics of government and society through political science.</p>
+
+			<h5><strong>Courses Offered:</strong></h5>
+			<ul>
+			    <li>Psychology</li>
+			    <li>Nursing</li>
+			    <li>Political Science</li>
+			</ul>
+			<br>
+			<hr>
+			<br>
+			<h2><strong>Arts & Design:</strong></h2>
+			<center><img src="arts.jpg"></center>
+			<br>
+			<p>Our Arts & Design courses will help you unleash your artistic expression and creativity. Our programs give you the opportunity to develop your abilities and realize your creative 				vision, regardless of your passion—fine arts, performing arts, or graphic design.</p>
+
+			<h5><strong>Courses Offered:</strong></h5>
+			<ul>
+			    <li>Fine Arts</li>
+			    <li>Graphic Design</li>
+			    <li>Performing Arts</li>
+			</ul>
+			<br>
+			<hr>
+			<br>
+			<h4>At Stellaris University, we offer a diverse range of courses designed to inspire, challenge, and prepare you for a successful and fulfilling career in your chosen field. Join 			us and embark on a transformative educational journey where possibilities are endless.</h4>
+    		</section>
+		<br>
+		<hr>
+		<br>
+		
+		<section class="admission">
+			<section id="admission">
+			<h1>Admission</h1>
+			<br>
+			<hr>
+			<br>
+			<center><img src="admission.jpg"></center>
+			<br>
+			<ol>
+			    <li><strong>Application Form:</strong></li> <br>
+			   	<p>- Complete and submit the university's online application form.</p>
+				<br>
+			    <li><strong>High School Diploma:</strong></li> <br>
+				<p>- Provide proof of high school graduation with an official diploma.</p>
+				<br>
+			    <li><strong>Transcripts:</strong></li> <br>
+				<p>- Submit official high school transcripts showing grades and courses.</p>
+				<br>
+		            <li><strong>Personal Statement:</strong></li> <br>
+				<p>- Write a brief personal statement explaining your academic goals and reasons for applying.</p>
+				<br>
+                            <li><strong>Letters of Recommendation:</strong></li> <br>
+				<p>- Obtain two letters of recommendation from teachers or counselors.</p></li>
+				<br>
+			    <li><strong>Standardized Test Scores:</strong></li> <br>
+				<p>- Submit SAT or ACT scores (if applicable and required by the university).</p>
+				<br>
+                            <li><strong>Application Fee:</strong></li> <br>
+				<p>- Pay the non-refundable application fee.</p>	
+			</ol>
+			<br>
+			<hr>
+			<br>
+		<section class="contact">
+		    <section id="contact">
+       	 		<h1>Contact Us</h1>
+			<br>
+			<hr>
+			<br>
+        		<h3>Feel free to contact us for any inquiries. Our contact information is provided below:</h3>
+        	<p>
+            		Stellaris University Name<br>
+           	 	Address: 234 Stellaris University Street, Memaville<br>
+            		Email: stellaris@university.edu<br>
+            		Phone: +1 (777) 123-4567
+        	</p>
+		<br>
+    		</section>
+		
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+
+		<footer>
+			&copy; 2023 Stellaris University. All rights reserved.
+		</footer>
+
+
+</body>
+
+</html>
